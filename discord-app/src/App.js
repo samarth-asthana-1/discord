@@ -1,11 +1,14 @@
 import React from 'react';
 // import { Counter } from './features/counter/Counter';
 import './App.css';
+import Sidebar from './Sidebar';
 
 function App() {
   return (
     <div className="app">
-      <h1>HIIIIIIIIIIIII</h1>
+
+      <Sidebar />
+      
     </div>
   );
 }
