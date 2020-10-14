@@ -6,6 +6,10 @@ import SidebarChannel from "./SidebarChannel.js";
 import SignalCellularAltIcon from "@material-ui/icons/SignalCellularAlt";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import CallIcon from "@material-ui/icons/Call";
+import { Avatar } from "@material-ui/core";
+import MicIcon from "@material-ui/icons/Mic";
+import HeadsetIcon from "@material-ui/icons/Headset";
+import SettingIcon from "@material-ui/icons/Settings";
 
 function Sidebar() {
   return (
@@ -39,6 +43,18 @@ function Sidebar() {
         <div className="sidebar__voiceIcons">
           <InfoOutlinedIcon />
           <CallIcon />
+        </div>
+      </div>
+      <div className="sidebar__profile">
+        <Avatar src="https://en.wikipedia.org/wiki/File:Elon_Musk_Royal_Society.jpg" />
+        <div className="sidebar__profileInfo">
+          <h3>@samarth-asthana</h3>
+          <p>#Awesome-Day</p>
+        </div>
+        <div className="sidebar__profileIcons">
+          <MicIcon />
+          <HeadsetIcon />
+          <SettingIcon />
         </div>
       </div>
     </div>
